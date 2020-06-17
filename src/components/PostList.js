@@ -32,7 +32,6 @@ class PostList extends React.Component {
 
 const mapStateToProps = (state) =>{
     return { posts: state.posts } 
-    // because src/reducers/index.js we called it posts
 }
 
 export default connect(mapStateToProps, { fetchPosts })(PostList);
